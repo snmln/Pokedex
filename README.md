@@ -1,5 +1,5 @@
 ## Demo site
-To demo the most recent build of this project please navigate to [snmlnpokedex.netlify.app/#/](https://snmlnpokedex.netlify.app/#/)
+To demo the most recent build of this project please navigate to [snmlnpokedex.netlify.app/#/](https://snmlnpokedex.netlify.app/#/){:target="_blank" rel="noopener"}
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
