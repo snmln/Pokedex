@@ -164,12 +164,14 @@ class Pokemon extends Component {
     render() {
         return (
             <div>
-                {this.state.types.slice(0, 1).map(type => (
                     <div className="container-fluid" >
                         <div className="col mt-5" >
-                            <div className='card-header'
+                        {this.state.types.slice(0, 1).map(type => (
+
+                            <div className='card-header mb-3'
                                 key={type}
-                                style={{ backgroundColor: `${TYPE_COLORS[type]}` }}>
+                                style={{ backgroundColor: `${TYPE_COLORS[type]}`,
+                                color:'white' }}>
                                 <div className="row">
                                     <div className="col-5">
 
@@ -199,12 +201,14 @@ class Pokemon extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card-body">
-                                    <div className="col-md-7 mx-auto">
+                                <div className="col-md-7 mx-auto">
                                         <img
                                             src={this.state.imageUrl}
                                             className="card-img-top rounded  " />
                                     </div>
+                                </div>))}
+                                <div className="card-body">
+                                    
                                     <div className="row align-items-center">
 
                                         <div className="col-md-12">
@@ -442,7 +446,7 @@ class Pokemon extends Component {
 
                                 </div>
 
-                            </div>
+                            
                             <div className="card-footer text-muted">
                                 Data From:
                     <a href='https://pokeapi.co/' target="_blank" className="card-link">
@@ -450,7 +454,7 @@ class Pokemon extends Component {
                     </a>
                             </div>
                         </div>
-                    </div>))}
+                    </div>
             </div>
         );
     }
